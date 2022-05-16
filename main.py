@@ -53,15 +53,15 @@ tail = (len(threads) % concurreny)
 count = len(threads) - tail
 while(executedThreadCount < count):
     for i in range(concurreny):
-        threads[i + executedThreadCount].start();
+        threads[i + executedThreadCount].start()
     for i in range(concurreny):
-        threads[i + executedThreadCount].join();
+        threads[i + executedThreadCount].join()
     executedThreadCount += concurreny
 # execute what is left
 for i in range(tail):
-    threads[i + executedThreadCount].start();
+    threads[i + executedThreadCount].start()
 for i in range(tail):
-    threads[i + executedThreadCount].join();
+    threads[i + executedThreadCount].join()
 
 for result in results:
     writer.writerow(result)
