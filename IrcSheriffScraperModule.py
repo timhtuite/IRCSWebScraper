@@ -1,4 +1,4 @@
-# IrscSheriffScraperModule.py
+# IrcSheriffScraperModule.py
 import requests
 from bs4 import BeautifulSoup
 from SafeConsoleModule import safe_print
