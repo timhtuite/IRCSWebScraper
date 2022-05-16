@@ -10,7 +10,7 @@ import csv
 from datesInSchoolYearModule import GetNextDayInSchoolYear
 import threading
 from SafeConsoleModule import safe_print
-from IrscSheriffScraperModule import InmateSearch
+from IrcSheriffScraperModule import InmateSearch
 
 # ignore requests SSL warning
 import warnings
