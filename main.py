@@ -48,7 +48,7 @@ for day in GetNextDayInSchoolYear(gradYear - 18):
     th = threading.Thread(target=InmateSearch, args=(day, token, results, cookieDict))
     #InmateSearch(day, token, writer, cookieDict)
     threads.append(th)
-executedThreadCount = 0;
+executedThreadCount = 0
 tail = (len(threads) % concurreny)
 count = len(threads) - tail
 while(executedThreadCount < count):
