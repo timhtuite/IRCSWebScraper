@@ -10,15 +10,15 @@ import csv
 from datesInSchoolYearModule import GetNextDayInSchoolYear
 import threading
 from SafeConsoleModule import safe_print
-from IrcSheriffScraperModule import InmateSearch
+from IrscSheriffScraperModule import InmateSearch
 
 # ignore requests SSL warning
 import warnings
 warnings.filterwarnings('ignore', message='Unverified HTTPS request')
 
 #Program Variables
-header = ["Name","Gender","Race","Link","DOB"]
-gradYear = 2014
+header = ["Name","Gender","Race","Link","DOB","Most Recent","Arrest Total"]
+gradYear = 2016
 today = date.today()
 concurreny = 6
 results = []
