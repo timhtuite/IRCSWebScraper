@@ -38,7 +38,7 @@ formUrl = "https://ircsheriff.org/inmate-search"
 formPage = requests.get(formUrl, verify=False)
 #print(formPage.text)
 cookieDict = formPage.cookies.get_dict(domain="ircsheriff.org")
-print cookieDict
+print(cookieDict)
 formPageSoup = BeautifulSoup(formPage.content, "html.parser")
 token = formPageSoup.find("input",{"name":"_token"})['value']
 #print token
